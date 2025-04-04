@@ -1,0 +1,632 @@
+-- MySQL dump 10.13  Distrib 8.0.40, for Win64 (x86_64)
+--
+-- Host: localhost    Database: centrodedialisis
+-- ------------------------------------------------------
+-- Server version	8.0.40
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `enfermero`
+--
+
+DROP TABLE IF EXISTS `enfermero`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `enfermero` (
+  `ID_Enfermero` int NOT NULL AUTO_INCREMENT,
+  `Nombre_y_Apellido` varchar(100) NOT NULL,
+  `Telefono` varchar(20) DEFAULT NULL,
+  `Email` varchar(100) DEFAULT NULL,
+  `Matricula` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`ID_Enfermero`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `enfermero`
+--
+
+LOCK TABLES `enfermero` WRITE;
+/*!40000 ALTER TABLE `enfermero` DISABLE KEYS */;
+INSERT INTO `enfermero` VALUES (1,'Juan Pérez','387-1045654','juan.perez@hospital.com','ENF0001'),(2,'Ana García','387-1343076','ana.garcia@hospital.com','ENF0002'),(3,'Carlos Martínez','387-3578418','carlos.martinez@hospital.com','ENF0003'),(4,'Laura López','387-3862865','laura.lopez@hospital.com','ENF0004'),(5,'Pedro Fernández','387-8579070','pedro.fernandez@hospital.com','ENF0005'),(6,'María Rodríguez','387-1306756','maria.rodriguez@hospital.com','ENF0006'),(7,'José Gómez','387-796573','jose.gomez@hospital.com','ENF0007'),(8,'Lucía Sánchez','387-62596','lucia.sanchez@hospital.com','ENF0008'),(9,'Luis Fernández','387-7923261','luis.fernandez@hospital.com','ENF0009'),(10,'Rosa Pérez','387-9428517','rosa.perez@hospital.com','ENF0010'),(11,'Raúl Martínez','387-3372803','raul.martinez@hospital.com','ENF0011'),(12,'Sandra López','387-8578466','sandra.lopez@hospital.com','ENF0012'),(13,'Javier Gómez','387-2773922','javier.gomez@hospital.com','ENF0013'),(14,'Elena Torres','387-8134210','elena.torres@hospital.com','ENF0014'),(15,'Diego Ruiz','387-2349288','diego.ruiz@hospital.com','ENF0015');
+/*!40000 ALTER TABLE `enfermero` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `evoluciones_clinicas`
+--
+
+DROP TABLE IF EXISTS `evoluciones_clinicas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `evoluciones_clinicas` (
+  `ID_Evolucion` int NOT NULL AUTO_INCREMENT,
+  `ID_Paciente` int NOT NULL,
+  `ID_Medico` int NOT NULL,
+  `evolucion` text NOT NULL,
+  `fecha` date NOT NULL,
+  PRIMARY KEY (`ID_Evolucion`),
+  KEY `ID_Paciente` (`ID_Paciente`),
+  KEY `ID_Medico` (`ID_Medico`),
+  CONSTRAINT `evoluciones_clinicas_ibfk_1` FOREIGN KEY (`ID_Paciente`) REFERENCES `paciente` (`ID_Paciente`),
+  CONSTRAINT `evoluciones_clinicas_ibfk_2` FOREIGN KEY (`ID_Medico`) REFERENCES `medico` (`ID_Medico`)
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `evoluciones_clinicas`
+--
+
+LOCK TABLES `evoluciones_clinicas` WRITE;
+/*!40000 ALTER TABLE `evoluciones_clinicas` DISABLE KEYS */;
+INSERT INTO `evoluciones_clinicas` VALUES (1,1,1,'Sesión completada sin inconvenientes.','2025-03-01'),(2,2,2,'Sesión completada sin inconvenientes.','2025-03-01'),(3,3,3,'Dolor leve en el sitio de punción.','2025-03-01'),(4,4,4,'Presentó signos de fatiga post-sesión.','2025-03-01'),(5,5,5,'Presión arterial elevada al inicio de la sesión.','2025-03-01'),(6,6,1,'Estable, sin novedades clínicas.','2025-03-01'),(7,7,2,'Presentó complicaciones leves durante la sesión.','2025-03-01'),(8,8,3,'Presentó complicaciones leves durante la sesión.','2025-03-01'),(9,9,4,'Presentó complicaciones leves durante la sesión.','2025-03-01'),(10,10,5,'Dolor leve en el sitio de punción.','2025-03-01'),(11,11,1,'Estable, sin novedades clínicas.','2025-03-01'),(12,12,2,'Dolor leve en el sitio de punción.','2025-03-01'),(13,13,3,'Molestias gastrointestinales durante el procedimiento.','2025-03-01'),(14,14,4,'Requiere control más frecuente por niveles de potasio.','2025-03-01'),(15,15,5,'Paciente en buen estado general.','2025-03-01'),(16,16,1,'Dolor leve en el sitio de punción.','2025-03-01'),(17,17,2,'Presión arterial elevada al inicio de la sesión.','2025-03-01'),(18,18,3,'Paciente en buen estado general.','2025-03-01'),(19,19,4,'Presentó complicaciones leves durante la sesión.','2025-03-01'),(20,20,5,'Sesión completada sin inconvenientes.','2025-03-01'),(21,21,1,'Dolor leve en el sitio de punción.','2025-03-01'),(22,22,2,'Presentó complicaciones leves durante la sesión.','2025-03-01'),(23,23,3,'Sesión completada sin inconvenientes.','2025-03-02'),(24,24,4,'Molestias gastrointestinales durante el procedimiento.','2025-03-02'),(25,25,5,'Presentó signos de fatiga post-sesión.','2025-03-02'),(26,26,1,'Presión arterial elevada al inicio de la sesión.','2025-03-02'),(27,27,2,'Estable, sin novedades clínicas.','2025-03-02'),(28,28,3,'Molestias gastrointestinales durante el procedimiento.','2025-03-02'),(29,29,4,'Presentó complicaciones leves durante la sesión.','2025-03-02'),(30,30,5,'Buen funcionamiento del acceso vascular.','2025-03-02'),(31,31,1,'Paciente en buen estado general.','2025-03-02'),(32,32,2,'Sesión completada sin inconvenientes.','2025-03-02'),(33,33,3,'Sesión completada sin inconvenientes.','2025-03-02'),(34,34,4,'Presión arterial elevada al inicio de la sesión.','2025-03-02'),(35,35,5,'Buen funcionamiento del acceso vascular.','2025-03-02'),(36,36,1,'Molestias gastrointestinales durante el procedimiento.','2025-03-02'),(37,37,2,'Dolor leve en el sitio de punción.','2025-03-02'),(38,38,3,'Estable, sin novedades clínicas.','2025-03-02'),(39,39,4,'Estable, sin novedades clínicas.','2025-03-02'),(40,40,5,'Presentó signos de fatiga post-sesión.','2025-03-02'),(41,41,1,'Molestias gastrointestinales durante el procedimiento.','2025-03-02'),(42,42,2,'Sesión completada sin inconvenientes.','2025-03-02'),(43,43,3,'Sesión completada sin inconvenientes.','2025-03-04'),(44,44,4,'Estable, sin novedades clínicas.','2025-03-04'),(45,45,5,'Paciente en buen estado general.','2025-03-04'),(46,46,1,'Requiere control más frecuente por niveles de potasio.','2025-03-04'),(47,47,2,'Sesión completada sin inconvenientes.','2025-03-04'),(48,48,3,'Estable, sin novedades clínicas.','2025-03-04'),(49,49,4,'Estable, sin novedades clínicas.','2025-03-04'),(50,50,5,'Paciente en buen estado general.','2025-03-04'),(51,51,1,'Buen funcionamiento del acceso vascular.','2025-03-04'),(52,52,2,'Paciente en buen estado general.','2025-03-04'),(53,53,3,'Dolor leve en el sitio de punción.','2025-03-04'),(54,54,4,'Presentó signos de fatiga post-sesión.','2025-03-04'),(55,55,5,'Sesión completada sin inconvenientes.','2025-03-04'),(56,56,1,'Molestias gastrointestinales durante el procedimiento.','2025-03-04'),(57,57,2,'Presentó complicaciones leves durante la sesión.','2025-03-04'),(58,58,3,'Requiere control más frecuente por niveles de potasio.','2025-03-04'),(59,59,4,'Molestias gastrointestinales durante el procedimiento.','2025-03-04'),(60,60,5,'Estable, sin novedades clínicas.','2025-03-04');
+/*!40000 ALTER TABLE `evoluciones_clinicas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `inasistencias`
+--
+
+DROP TABLE IF EXISTS `inasistencias`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `inasistencias` (
+  `ID_Inasistencia` int NOT NULL AUTO_INCREMENT,
+  `ID_Paciente` int NOT NULL,
+  `fecha` date NOT NULL,
+  `motivo` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID_Inasistencia`),
+  KEY `ID_Paciente` (`ID_Paciente`),
+  CONSTRAINT `inasistencias_ibfk_1` FOREIGN KEY (`ID_Paciente`) REFERENCES `paciente` (`ID_Paciente`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `inasistencias`
+--
+
+LOCK TABLES `inasistencias` WRITE;
+/*!40000 ALTER TABLE `inasistencias` DISABLE KEYS */;
+/*!40000 ALTER TABLE `inasistencias` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `insumo_sala`
+--
+
+DROP TABLE IF EXISTS `insumo_sala`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `insumo_sala` (
+  `ID_Insumo_Sala` int NOT NULL AUTO_INCREMENT,
+  `ID_Turno` int NOT NULL,
+  `ID_Insumo` int NOT NULL,
+  `Cantidad` int NOT NULL,
+  PRIMARY KEY (`ID_Insumo_Sala`),
+  KEY `ID_Turno` (`ID_Turno`),
+  KEY `ID_Insumo` (`ID_Insumo`),
+  CONSTRAINT `insumo_sala_ibfk_1` FOREIGN KEY (`ID_Turno`) REFERENCES `turnos` (`ID_Turno`),
+  CONSTRAINT `insumo_sala_ibfk_2` FOREIGN KEY (`ID_Insumo`) REFERENCES `insumos` (`ID_Insumo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `insumo_sala`
+--
+
+LOCK TABLES `insumo_sala` WRITE;
+/*!40000 ALTER TABLE `insumo_sala` DISABLE KEYS */;
+/*!40000 ALTER TABLE `insumo_sala` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `insumos`
+--
+
+DROP TABLE IF EXISTS `insumos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `insumos` (
+  `ID_Insumo` int NOT NULL AUTO_INCREMENT,
+  `Nombre` varchar(100) NOT NULL,
+  `Descripcion` text,
+  `Stock` int NOT NULL,
+  `Unidad` enum('Unidades','Litros','Kg') NOT NULL,
+  PRIMARY KEY (`ID_Insumo`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `insumos`
+--
+
+LOCK TABLES `insumos` WRITE;
+/*!40000 ALTER TABLE `insumos` DISABLE KEYS */;
+INSERT INTO `insumos` VALUES (1,'Solucion para Hemodiálisis','Sustancia usada para el tratamiento de hemodiálisis',50,'Unidades'),(2,'Filtro','Dispositivo utilizado para filtrar la sangre durante la hemodiálisis',30,'Unidades'),(3,'Heparina','Anticoagulante utilizado para evitar la coagulación durante la diálisis',150,'Unidades'),(4,'Solución salina','Solución utilizada para la limpieza y purificación del cuerpo durante la diálisis',200,'Litros'),(5,'Jeringas','Jeringas utilizadas para la administración de medicamentos y fluidos',120,'Unidades'),(6,'Guantes','Guantes utilizados para el control de infecciones durante los procedimientos de diálisis',500,'Unidades'),(7,'Bolsas para Diálisis Peritoneal','Bolsas utilizadas en la diálisis peritoneal para la infusión de líquidos',80,'Unidades');
+/*!40000 ALTER TABLE `insumos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `medicacion`
+--
+
+DROP TABLE IF EXISTS `medicacion`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `medicacion` (
+  `ID_Medicacion` int NOT NULL AUTO_INCREMENT,
+  `ID_Paciente` int NOT NULL,
+  `medicamento` varchar(255) NOT NULL,
+  `dosis` varchar(255) NOT NULL,
+  `frecuencia` varchar(255) DEFAULT NULL,
+  `fecha_inicio` date DEFAULT NULL,
+  PRIMARY KEY (`ID_Medicacion`),
+  KEY `ID_Paciente` (`ID_Paciente`),
+  CONSTRAINT `medicacion_ibfk_1` FOREIGN KEY (`ID_Paciente`) REFERENCES `paciente` (`ID_Paciente`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `medicacion`
+--
+
+LOCK TABLES `medicacion` WRITE;
+/*!40000 ALTER TABLE `medicacion` DISABLE KEYS */;
+/*!40000 ALTER TABLE `medicacion` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `medico`
+--
+
+DROP TABLE IF EXISTS `medico`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `medico` (
+  `ID_Medico` int NOT NULL AUTO_INCREMENT,
+  `Nombre_y_Apellido` varchar(50) NOT NULL,
+  `Edad` int NOT NULL,
+  `Matricula` varchar(20) NOT NULL,
+  PRIMARY KEY (`ID_Medico`),
+  UNIQUE KEY `Matricula` (`Matricula`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `medico`
+--
+
+LOCK TABLES `medico` WRITE;
+/*!40000 ALTER TABLE `medico` DISABLE KEYS */;
+INSERT INTO `medico` VALUES (1,'Dr. Juan Pérez',40,'MAT001'),(2,'Dra. María Gómez',45,'MAT002'),(3,'Dr. Carlos López',38,'MAT003'),(4,'Dra. Ana Martínez',42,'MAT004'),(5,'Dr. Luis García',50,'MAT005'),(6,'Dra. Sofía Fernández',39,'MAT006');
+/*!40000 ALTER TABLE `medico` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `obras_sociales`
+--
+
+DROP TABLE IF EXISTS `obras_sociales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `obras_sociales` (
+  `ID_Obra_Social` int NOT NULL AUTO_INCREMENT,
+  `razon_social` varchar(255) NOT NULL,
+  `nombre_fantasia` varchar(255) NOT NULL,
+  `provincia` varchar(255) DEFAULT NULL,
+  `telefono` varchar(20) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`ID_Obra_Social`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `obras_sociales`
+--
+
+LOCK TABLES `obras_sociales` WRITE;
+/*!40000 ALTER TABLE `obras_sociales` DISABLE KEYS */;
+INSERT INTO `obras_sociales` VALUES (1,'Instituto provincial de Salud','IPS','Buenos Aires','0800-333-1234','contacto@ips.gob.ar'),(2,'Cobertura de Salud S.A.','CobraSalud','Córdoba','0810-555-6789','info@cobrarsalud.com'),(3,'Obra social del personal de la construccion','OSPC','Buenos Aires','011-4455-2244','info@ospc.org.ar'),(4,'Obra social de petroleros','OSPETROL','Neuquén','0299-488-1122','atencion@ospetrol.com'),(5,'Programa federal incluir salud','Incluir Salud','Formosa','0370-444-3300','contacto@incluirsalud.gob.ar'),(6,'Asociacion Sancor Salud','Sancor Salud','Santa Fe','0342-555-8900','info@sancorsalud.com.ar'),(7,'Obra social de trabajadores rurales y estibadores de la Republica Argentina','OSTRERA','Corrientes','0379-400-5566','contacto@ostrera.org.ar'),(8,'Obra social del personal administrativo y tecnico de la construccion','OSPATC','Mendoza','0261-432-7890','info@ospatc.org.ar'),(9,'Instituto Nacional de Servicios Sociales para Jubilados y Pensionados','PAMI','Nacional','0800-222-7264','info@pami.org.ar'),(10,'Obra social de servicios bancarios','OBSB','CABA','011-5555-0000','contacto@obsb.com.ar');
+/*!40000 ALTER TABLE `obras_sociales` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `paciente`
+--
+
+DROP TABLE IF EXISTS `paciente`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `paciente` (
+  `ID_Paciente` int NOT NULL AUTO_INCREMENT,
+  `Nombre_y_Apellido` varchar(50) NOT NULL,
+  `Edad` int NOT NULL,
+  `ID_Enfermero` int DEFAULT NULL,
+  `Obra_Social` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`ID_Paciente`),
+  KEY `ID_Enfermero` (`ID_Enfermero`),
+  CONSTRAINT `paciente_ibfk_1` FOREIGN KEY (`ID_Enfermero`) REFERENCES `enfermero` (`ID_Enfermero`)
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `paciente`
+--
+
+LOCK TABLES `paciente` WRITE;
+/*!40000 ALTER TABLE `paciente` DISABLE KEYS */;
+INSERT INTO `paciente` VALUES (1,'Juan Pérez',30,7,'1'),(2,'María Gómez',31,5,'2'),(3,'Carlos López',32,5,'2'),(4,'Ana Martínez',33,9,'3'),(5,'Luis García',34,8,'1'),(6,'Sofía Fernández',35,7,'4'),(7,'Pedro Sánchez',36,7,'5'),(8,'Laura Rodríguez',37,2,'1'),(9,'Diego González',38,1,'2'),(10,'Carmen Díaz',39,7,'1'),(11,'Javier Ruiz',40,5,'3'),(12,'Isabel Hernández',41,2,'1'),(13,'Miguel Torres',42,6,'5'),(14,'Elena Ramírez',43,8,'6'),(15,'Francisco Flores',44,7,'5'),(16,'Lucía Álvarez',45,4,'1'),(17,'Daniel Romero',46,15,'6'),(18,'Paula Moreno',47,7,'2'),(19,'Alejandro Jiménez',48,9,'6'),(20,'Sara Castro',49,1,'7'),(21,'Raúl Ortega',50,12,'3'),(22,'Marta Navarro',51,2,'6'),(23,'Roberto Molina',52,3,'6'),(24,'Patricia Delgado',53,2,'7'),(25,'Jorge Vargas',54,14,'6'),(26,'Natalia Cabrera',55,9,'7'),(27,'Andrés Guerrero',56,2,'1'),(28,'Clara Marín',57,14,'8'),(29,'Rubén Peña',58,7,'8'),(30,'Eva Rojas',59,4,'7'),(31,'Marcos Ruiz',60,8,'1'),(32,'Ana Belén García',61,6,'9'),(33,'Carlos Martínez',62,3,'1'),(34,'Lucía Fernández',63,8,'4'),(35,'Miguel Ángel Pérez',64,4,'3'),(36,'Raúl Sánchez',65,5,'3'),(37,'Paola Díaz',66,15,'4'),(38,'José González',67,11,'9'),(39,'Mercedes Ramírez',68,6,'4'),(40,'Felipe Romero',69,1,'9'),(41,'Claudia Ortega',70,5,'9'),(42,'Juan Antonio Fernández',71,8,'1'),(43,'Marta López',72,13,'9'),(44,'César González',73,6,'9'),(45,'Esther Torres',74,2,'9'),(46,'Celia Sánchez',75,15,'9'),(47,'David Herrera',76,15,'8'),(48,'Raquel Castro',77,2,'9'),(49,'Antonio García',78,1,'4'),(50,'Sandra Ríos',79,2,'5'),(51,'Pedro Hernández',80,12,'9'),(52,'Ana González',81,4,'5'),(53,'Tomás Martínez',82,8,'9'),(54,'Rocío Sánchez',83,6,'8'),(55,'Cristina Ruiz',84,5,'10'),(56,'Joaquín López',85,14,'9'),(57,'José Luis Martínez',86,3,'10'),(58,'Sofía López',87,1,'1'),(59,'Raúl Hernández',88,15,'10'),(60,'Luis Miguel González',89,9,'9');
+/*!40000 ALTER TABLE `paciente` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `proveedores`
+--
+
+DROP TABLE IF EXISTS `proveedores`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `proveedores` (
+  `ID_Proveedor` int NOT NULL AUTO_INCREMENT,
+  `ID_Insumo` int NOT NULL,
+  `nombre_proveedor` varchar(255) NOT NULL,
+  `tipo_producto_servicio` varchar(255) NOT NULL,
+  `contacto` varchar(255) DEFAULT NULL,
+  `direccion` varchar(255) DEFAULT NULL,
+  `telefono` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`ID_Proveedor`),
+  KEY `ID_Insumo` (`ID_Insumo`),
+  CONSTRAINT `proveedores_ibfk_1` FOREIGN KEY (`ID_Insumo`) REFERENCES `insumos` (`ID_Insumo`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `proveedores`
+--
+
+LOCK TABLES `proveedores` WRITE;
+/*!40000 ALTER TABLE `proveedores` DISABLE KEYS */;
+INSERT INTO `proveedores` VALUES (1,1,'MediPro S.A.','Filtros','Juan Pérez','Av. Salud 123','011-1234-5678'),(2,2,'BioSalud SRL','Soluciones','María Gómez','Calle Hospital 456','011-2345-6789'),(3,3,'DialiTech','Máquinas de diálisis','Carlos Díaz','Ruta 9 km 20','011-3456-7890'),(4,4,'SaludPlus S.A.','Jeringas y agujas','Ana Torres','Diagonal Médica 789','011-4567-8901'),(5,5,'RenalMed Group','Tubuladuras','Javier Méndez','Parque Industrial Norte','011-5678-9012'),(6,1,'TecnoDial SRL','Anticoagulantes','Laura Suárez','Zona Franca 55','011-6789-0123'),(7,2,'VitalCare S.A.','Guantes estériles','Diego López','Av. Central 654','011-7890-1234'),(8,3,'Suministros Médicos Delta','Equipos portátiles','Claudia Rivas','Camino Sanitario 12','011-8901-2345'),(9,4,'NephroLogix','Bicarbonato','Sofía Herrera','B° Industrial Oeste','011-9012-3456'),(10,5,'Insumed','Catéteres','Ricardo Fernández','Polígono Salud 88','011-0123-4567');
+/*!40000 ALTER TABLE `proveedores` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `resultados_examenes`
+--
+
+DROP TABLE IF EXISTS `resultados_examenes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `resultados_examenes` (
+  `ID_Examen` int NOT NULL AUTO_INCREMENT,
+  `ID_Paciente` int NOT NULL,
+  `examen` enum('Hematocrito','Hemoglobina','Urea Pre','Urea Post','Calcio','Fosforo','Creatinina') NOT NULL,
+  `resultado` decimal(10,2) NOT NULL,
+  `fecha` date NOT NULL,
+  PRIMARY KEY (`ID_Examen`),
+  KEY `ID_Paciente` (`ID_Paciente`),
+  CONSTRAINT `resultados_examenes_ibfk_1` FOREIGN KEY (`ID_Paciente`) REFERENCES `paciente` (`ID_Paciente`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `resultados_examenes`
+--
+
+LOCK TABLES `resultados_examenes` WRITE;
+/*!40000 ALTER TABLE `resultados_examenes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `resultados_examenes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tratamiento`
+--
+
+DROP TABLE IF EXISTS `tratamiento`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tratamiento` (
+  `ID_Tratamiento` int NOT NULL AUTO_INCREMENT,
+  `Tipo` varchar(50) NOT NULL,
+  `ID_Paciente` int NOT NULL,
+  PRIMARY KEY (`ID_Tratamiento`),
+  KEY `ID_Paciente` (`ID_Paciente`),
+  CONSTRAINT `tratamiento_ibfk_1` FOREIGN KEY (`ID_Paciente`) REFERENCES `paciente` (`ID_Paciente`)
+) ENGINE=InnoDB AUTO_INCREMENT=124 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tratamiento`
+--
+
+LOCK TABLES `tratamiento` WRITE;
+/*!40000 ALTER TABLE `tratamiento` DISABLE KEYS */;
+INSERT INTO `tratamiento` VALUES (1,'Hemodiálisis',1),(2,'Hemodiálisis',2),(3,'Hemodiálisis',3),(4,'Hemodiálisis',4),(5,'Hemodiálisis',5),(6,'Diálisis Peritoneal',6),(7,'Diálisis Peritoneal',7),(8,'Diálisis Peritoneal',8),(9,'Diálisis Peritoneal',9),(10,'Hemodiálisis',10),(11,'Hemodiálisis',11),(12,'Hemodiálisis',12),(13,'Hemodiálisis',13),(14,'Hemodiálisis',14),(15,'Hemodiálisis',15),(16,'Diálisis Peritoneal',16),(17,'Diálisis Peritoneal',17),(18,'Diálisis Peritoneal',18),(19,'Diálisis Peritoneal',19),(20,'Hemodiálisis',20),(21,'Hemodiálisis',21),(22,'Hemodiálisis',22),(23,'Hemodiálisis',23),(24,'Hemodiálisis',24),(25,'Hemodiálisis',25),(26,'Diálisis Peritoneal',26),(27,'Diálisis Peritoneal',27),(28,'Diálisis Peritoneal',28),(29,'Diálisis Peritoneal',29),(30,'Hemodiálisis',30),(31,'Hemodiálisis',31),(32,'Hemodiálisis',32),(33,'Hemodiálisis',33),(34,'Hemodiálisis',34),(35,'Hemodiálisis',35),(36,'Diálisis Peritoneal',36),(37,'Diálisis Peritoneal',37),(38,'Diálisis Peritoneal',38),(39,'Diálisis Peritoneal',39),(40,'Hemodiálisis',40),(41,'Hemodiálisis',41),(42,'Hemodiálisis',42),(43,'Hemodiálisis',43),(44,'Hemodiálisis',44),(45,'Hemodiálisis',45),(46,'Diálisis Peritoneal',46),(47,'Diálisis Peritoneal',47),(48,'Diálisis Peritoneal',48),(49,'Diálisis Peritoneal',49),(50,'Hemodiálisis',50),(51,'Hemodiálisis',51),(52,'Hemodiálisis',52),(53,'Hemodiálisis',53),(54,'Hemodiálisis',54),(55,'Hemodiálisis',55),(56,'Diálisis Peritoneal',56),(57,'Diálisis Peritoneal',57),(58,'Diálisis Peritoneal',58),(59,'Diálisis Peritoneal',59),(60,'Hemodiálisis',60),(61,'Diálisis Peritoneal',9),(62,'Hemodiálisis',20),(63,'Hemodiálisis',40),(64,'Diálisis Peritoneal',49),(65,'Diálisis Peritoneal',58),(66,'Diálisis Peritoneal',8),(67,'Hemodiálisis',12),(68,'Hemodiálisis',22),(69,'Hemodiálisis',24),(70,'Diálisis Peritoneal',27),(71,'Hemodiálisis',45),(72,'Diálisis Peritoneal',48),(73,'Hemodiálisis',50),(74,'Hemodiálisis',23),(75,'Hemodiálisis',33),(76,'Diálisis Peritoneal',57),(77,'Diálisis Peritoneal',16),(78,'Hemodiálisis',30),(79,'Hemodiálisis',35),(80,'Hemodiálisis',52),(81,'Hemodiálisis',2),(82,'Hemodiálisis',3),(83,'Hemodiálisis',11),(84,'Diálisis Peritoneal',36),(85,'Hemodiálisis',41),(86,'Hemodiálisis',55),(87,'Hemodiálisis',13),(88,'Hemodiálisis',32),(89,'Diálisis Peritoneal',39),(90,'Hemodiálisis',44),(91,'Hemodiálisis',54),(92,'Hemodiálisis',1),(93,'Diálisis Peritoneal',6),(94,'Diálisis Peritoneal',7),(95,'Hemodiálisis',10),(96,'Hemodiálisis',15),(97,'Diálisis Peritoneal',18),(98,'Diálisis Peritoneal',29),(99,'Hemodiálisis',5),(100,'Hemodiálisis',14),(101,'Hemodiálisis',31),(102,'Hemodiálisis',34),(103,'Hemodiálisis',42),(104,'Hemodiálisis',53),(105,'Hemodiálisis',4),(106,'Diálisis Peritoneal',19),(107,'Diálisis Peritoneal',26),(108,'Hemodiálisis',60),(109,'Diálisis Peritoneal',38),(110,'Hemodiálisis',21),(111,'Hemodiálisis',51),(112,'Hemodiálisis',43),(113,'Hemodiálisis',25),(114,'Diálisis Peritoneal',28),(115,'Diálisis Peritoneal',56),(116,'Diálisis Peritoneal',17),(117,'Diálisis Peritoneal',37),(118,'Diálisis Peritoneal',46),(119,'Diálisis Peritoneal',47),(120,'Diálisis Peritoneal',59);
+/*!40000 ALTER TABLE `tratamiento` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `turnos`
+--
+
+DROP TABLE IF EXISTS `turnos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `turnos` (
+  `ID_Turno` int NOT NULL AUTO_INCREMENT,
+  `ID_Paciente` int NOT NULL,
+  `ID_Medico` int NOT NULL,
+  `Dias_Semana` set('Lunes','Martes','Miércoles','Jueves','Viernes','Sábado') NOT NULL,
+  `Horario` time NOT NULL,
+  `Fecha_Turno` date DEFAULT NULL,
+  PRIMARY KEY (`ID_Turno`),
+  UNIQUE KEY `ID_Paciente` (`ID_Paciente`,`Horario`),
+  KEY `ID_Medico` (`ID_Medico`),
+  CONSTRAINT `turnos_ibfk_1` FOREIGN KEY (`ID_Paciente`) REFERENCES `paciente` (`ID_Paciente`),
+  CONSTRAINT `turnos_ibfk_2` FOREIGN KEY (`ID_Medico`) REFERENCES `medico` (`ID_Medico`)
+) ENGINE=InnoDB AUTO_INCREMENT=91 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `turnos`
+--
+
+LOCK TABLES `turnos` WRITE;
+/*!40000 ALTER TABLE `turnos` DISABLE KEYS */;
+INSERT INTO `turnos` VALUES (1,1,1,'Martes,Jueves,Sábado','07:00:00',NULL),(2,2,1,'Martes,Jueves,Sábado','07:00:00',NULL),(3,3,1,'Martes,Jueves,Sábado','07:00:00',NULL),(4,4,1,'Martes,Jueves,Sábado','07:00:00',NULL),(5,5,1,'Martes,Jueves,Sábado','07:00:00',NULL),(6,6,1,'Martes,Jueves,Sábado','07:00:00',NULL),(7,7,1,'Martes,Jueves,Sábado','07:00:00',NULL),(8,8,1,'Martes,Jueves,Sábado','07:00:00',NULL),(9,9,1,'Martes,Jueves,Sábado','07:00:00',NULL),(10,10,1,'Martes,Jueves,Sábado','07:00:00',NULL),(16,11,2,'Martes,Jueves,Sábado','12:00:00',NULL),(17,12,2,'Martes,Jueves,Sábado','12:00:00',NULL),(18,13,2,'Martes,Jueves,Sábado','12:00:00',NULL),(19,14,2,'Martes,Jueves,Sábado','12:00:00',NULL),(20,15,2,'Martes,Jueves,Sábado','12:00:00',NULL),(21,16,2,'Martes,Jueves,Sábado','12:00:00',NULL),(22,17,2,'Martes,Jueves,Sábado','12:00:00',NULL),(23,18,2,'Martes,Jueves,Sábado','12:00:00',NULL),(24,19,2,'Martes,Jueves,Sábado','12:00:00',NULL),(25,20,2,'Martes,Jueves,Sábado','12:00:00',NULL),(31,21,3,'Martes,Jueves,Sábado','17:00:00',NULL),(32,22,3,'Martes,Jueves,Sábado','17:00:00',NULL),(33,23,3,'Martes,Jueves,Sábado','17:00:00',NULL),(34,24,3,'Martes,Jueves,Sábado','17:00:00',NULL),(35,25,3,'Martes,Jueves,Sábado','17:00:00',NULL),(36,26,3,'Martes,Jueves,Sábado','17:00:00',NULL),(37,27,3,'Martes,Jueves,Sábado','17:00:00',NULL),(38,28,3,'Martes,Jueves,Sábado','17:00:00',NULL),(39,29,3,'Martes,Jueves,Sábado','17:00:00',NULL),(40,30,3,'Martes,Jueves,Sábado','17:00:00',NULL),(46,31,4,'Lunes,Miércoles,Viernes','07:00:00',NULL),(47,32,4,'Lunes,Miércoles,Viernes','07:00:00',NULL),(48,33,4,'Lunes,Miércoles,Viernes','07:00:00',NULL),(49,34,4,'Lunes,Miércoles,Viernes','07:00:00',NULL),(50,35,4,'Lunes,Miércoles,Viernes','07:00:00',NULL),(51,36,4,'Lunes,Miércoles,Viernes','07:00:00',NULL),(52,37,4,'Lunes,Miércoles,Viernes','07:00:00',NULL),(53,38,4,'Lunes,Miércoles,Viernes','07:00:00',NULL),(54,39,4,'Lunes,Miércoles,Viernes','07:00:00',NULL),(55,40,4,'Lunes,Miércoles,Viernes','07:00:00',NULL),(61,41,5,'Lunes,Miércoles,Viernes','12:00:00',NULL),(62,42,5,'Lunes,Miércoles,Viernes','12:00:00',NULL),(63,43,5,'Lunes,Miércoles,Viernes','12:00:00',NULL),(64,44,5,'Lunes,Miércoles,Viernes','12:00:00',NULL),(65,45,5,'Lunes,Miércoles,Viernes','12:00:00',NULL),(66,46,5,'Lunes,Miércoles,Viernes','12:00:00',NULL),(67,47,5,'Lunes,Miércoles,Viernes','12:00:00',NULL),(68,48,5,'Lunes,Miércoles,Viernes','12:00:00',NULL),(69,49,5,'Lunes,Miércoles,Viernes','12:00:00',NULL),(70,50,5,'Lunes,Miércoles,Viernes','12:00:00',NULL),(76,51,6,'Lunes,Miércoles,Viernes','17:00:00',NULL),(77,52,6,'Lunes,Miércoles,Viernes','17:00:00',NULL),(78,53,6,'Lunes,Miércoles,Viernes','17:00:00',NULL),(79,54,6,'Lunes,Miércoles,Viernes','17:00:00',NULL),(80,55,6,'Lunes,Miércoles,Viernes','17:00:00',NULL),(81,56,6,'Lunes,Miércoles,Viernes','17:00:00',NULL),(82,57,6,'Lunes,Miércoles,Viernes','17:00:00',NULL),(83,58,6,'Lunes,Miércoles,Viernes','17:00:00',NULL),(84,59,6,'Lunes,Miércoles,Viernes','17:00:00',NULL),(85,60,6,'Lunes,Miércoles,Viernes','17:00:00',NULL);
+/*!40000 ALTER TABLE `turnos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Temporary view structure for view `vista_inasistencias`
+--
+
+DROP TABLE IF EXISTS `vista_inasistencias`;
+/*!50001 DROP VIEW IF EXISTS `vista_inasistencias`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `vista_inasistencias` AS SELECT 
+ 1 AS `ID_Inasistencia`,
+ 1 AS `Paciente`,
+ 1 AS `fecha`,
+ 1 AS `motivo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `vista_insumos_stock`
+--
+
+DROP TABLE IF EXISTS `vista_insumos_stock`;
+/*!50001 DROP VIEW IF EXISTS `vista_insumos_stock`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `vista_insumos_stock` AS SELECT 
+ 1 AS `ID_Insumo`,
+ 1 AS `Insumo`,
+ 1 AS `Stock`,
+ 1 AS `Unidad`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `vista_pacientes_enfermeros`
+--
+
+DROP TABLE IF EXISTS `vista_pacientes_enfermeros`;
+/*!50001 DROP VIEW IF EXISTS `vista_pacientes_enfermeros`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `vista_pacientes_enfermeros` AS SELECT 
+ 1 AS `ID_Paciente`,
+ 1 AS `Paciente`,
+ 1 AS `Enfermero`,
+ 1 AS `Telefono`,
+ 1 AS `Email`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `vista_pacientes_obrasocial`
+--
+
+DROP TABLE IF EXISTS `vista_pacientes_obrasocial`;
+/*!50001 DROP VIEW IF EXISTS `vista_pacientes_obrasocial`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `vista_pacientes_obrasocial` AS SELECT 
+ 1 AS `ID_Paciente`,
+ 1 AS `Nombre_y_Apellido`,
+ 1 AS `Edad`,
+ 1 AS `Obra_Social`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `vista_pacientes_tratamientos`
+--
+
+DROP TABLE IF EXISTS `vista_pacientes_tratamientos`;
+/*!50001 DROP VIEW IF EXISTS `vista_pacientes_tratamientos`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `vista_pacientes_tratamientos` AS SELECT 
+ 1 AS `ID_Paciente`,
+ 1 AS `Paciente`,
+ 1 AS `Tratamiento`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `vista_proveedores`
+--
+
+DROP TABLE IF EXISTS `vista_proveedores`;
+/*!50001 DROP VIEW IF EXISTS `vista_proveedores`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `vista_proveedores` AS SELECT 
+ 1 AS `ID_Proveedor`,
+ 1 AS `nombre_proveedor`,
+ 1 AS `tipo_producto_servicio`,
+ 1 AS `contacto`,
+ 1 AS `Insumo`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Temporary view structure for view `vista_turnos_programados`
+--
+
+DROP TABLE IF EXISTS `vista_turnos_programados`;
+/*!50001 DROP VIEW IF EXISTS `vista_turnos_programados`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `vista_turnos_programados` AS SELECT 
+ 1 AS `ID_Turno`,
+ 1 AS `Horario`,
+ 1 AS `Dias_Semana`,
+ 1 AS `Paciente`,
+ 1 AS `Medico`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Final view structure for view `vista_inasistencias`
+--
+
+/*!50001 DROP VIEW IF EXISTS `vista_inasistencias`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `vista_inasistencias` AS select `i`.`ID_Inasistencia` AS `ID_Inasistencia`,`p`.`Nombre_y_Apellido` AS `Paciente`,`i`.`fecha` AS `fecha`,`i`.`motivo` AS `motivo` from (`inasistencias` `i` join `paciente` `p` on((`i`.`ID_Paciente` = `p`.`ID_Paciente`))) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `vista_insumos_stock`
+--
+
+/*!50001 DROP VIEW IF EXISTS `vista_insumos_stock`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `vista_insumos_stock` AS select `i`.`ID_Insumo` AS `ID_Insumo`,`i`.`Nombre` AS `Insumo`,`i`.`Stock` AS `Stock`,`i`.`Unidad` AS `Unidad` from `insumos` `i` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `vista_pacientes_enfermeros`
+--
+
+/*!50001 DROP VIEW IF EXISTS `vista_pacientes_enfermeros`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `vista_pacientes_enfermeros` AS select `p`.`ID_Paciente` AS `ID_Paciente`,`p`.`Nombre_y_Apellido` AS `Paciente`,`e`.`Nombre_y_Apellido` AS `Enfermero`,`e`.`Telefono` AS `Telefono`,`e`.`Email` AS `Email` from (`paciente` `p` join `enfermero` `e` on((`p`.`ID_Enfermero` = `e`.`ID_Enfermero`))) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `vista_pacientes_obrasocial`
+--
+
+/*!50001 DROP VIEW IF EXISTS `vista_pacientes_obrasocial`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `vista_pacientes_obrasocial` AS select `p`.`ID_Paciente` AS `ID_Paciente`,`p`.`Nombre_y_Apellido` AS `Nombre_y_Apellido`,`p`.`Edad` AS `Edad`,`p`.`Obra_Social` AS `Obra_Social` from `paciente` `p` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `vista_pacientes_tratamientos`
+--
+
+/*!50001 DROP VIEW IF EXISTS `vista_pacientes_tratamientos`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `vista_pacientes_tratamientos` AS select `p`.`ID_Paciente` AS `ID_Paciente`,`p`.`Nombre_y_Apellido` AS `Paciente`,`t`.`Tipo` AS `Tratamiento` from (`paciente` `p` join `tratamiento` `t` on((`p`.`ID_Paciente` = `t`.`ID_Paciente`))) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `vista_proveedores`
+--
+
+/*!50001 DROP VIEW IF EXISTS `vista_proveedores`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `vista_proveedores` AS select `pr`.`ID_Proveedor` AS `ID_Proveedor`,`pr`.`nombre_proveedor` AS `nombre_proveedor`,`pr`.`tipo_producto_servicio` AS `tipo_producto_servicio`,`pr`.`contacto` AS `contacto`,`i`.`Nombre` AS `Insumo` from (`proveedores` `pr` join `insumos` `i` on((`pr`.`ID_Insumo` = `i`.`ID_Insumo`))) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+
+--
+-- Final view structure for view `vista_turnos_programados`
+--
+
+/*!50001 DROP VIEW IF EXISTS `vista_turnos_programados`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `vista_turnos_programados` AS select `t`.`ID_Turno` AS `ID_Turno`,`t`.`Horario` AS `Horario`,`t`.`Dias_Semana` AS `Dias_Semana`,`p`.`Nombre_y_Apellido` AS `Paciente`,`m`.`Nombre_y_Apellido` AS `Medico` from ((`turnos` `t` join `paciente` `p` on((`t`.`ID_Paciente` = `p`.`ID_Paciente`))) join `medico` `m` on((`t`.`ID_Medico` = `m`.`ID_Medico`))) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-04-01 16:44:26

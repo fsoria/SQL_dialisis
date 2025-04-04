@@ -1,0 +1,8 @@
+﻿ID_Insumo;Nombre;Descripcion;Stock;Unidad
+1;Solucion para Hemodiálisis;Sustancia usada para el tratamiento de hemodiálisis;50;Unidades
+2;Filtro;Dispositivo utilizado para filtrar la sangre durante la hemodiálisis;30;Unidades
+3;Heparina;Anticoagulante utilizado para evitar la coagulación durante la diálisis;150;Unidades
+4;Solución salina;Solución utilizada para la limpieza y purificación del cuerpo durante la diálisis;200;Litros
+5;Jeringas;Jeringas utilizadas para la administración de medicamentos y fluidos;120;Unidades
+6;Guantes;Guantes utilizados para el control de infecciones durante los procedimientos de diálisis;500;Unidades
+7;Bolsas para Diálisis Peritoneal;Bolsas utilizadas en la diálisis peritoneal para la infusión de líquidos;80;Unidades

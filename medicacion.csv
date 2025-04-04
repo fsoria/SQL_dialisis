@@ -1,0 +1,61 @@
+﻿ID_Medicacion;ID_Paciente;Medicamento;Dosis;Frecuencia;Fecha_inicio
+1;1;Enalapril;10 mg;Diario;1/3/2025
+2;2;Furosemida;40 mg;Diario;2/3/2025
+3;3;Amlodipino;5 mg;Diario;3/3/2025
+4;4;Hidroclorotiazida;25 mg;Diario;4/3/2025
+5;5;Losartán;50 mg;Diario;5/3/2025
+6;6;Epoetina alfa;5000 UI;Semanal;6/3/2025
+7;7;Calcifediol;1 mcg;Semanal;7/3/2025
+8;8;Alopurinol;100 mg;Diario;8/3/2025
+9;9;Ferrous sulfate;200 mg;Diario;9/3/2025
+10;10;Lansoprazol;15 mg;Diario;10/3/2025
+11;11;Enalapril;10 mg;Diario;11/3/2025
+12;12;Furosemida;40 mg;Diario;12/3/2025
+13;13;Amlodipino;5 mg;Diario;13/3/2025
+14;14;Hidroclorotiazida;25 mg;Diario;14/3/2025
+15;15;Losartán;50 mg;Diario;15/3/2025
+16;16;Epoetina alfa;5000 UI;Semanal;16/3/2025
+17;17;Calcifediol;1 mcg;Semanal;17/3/2025
+18;18;Alopurinol;100 mg;Diario;18/3/2025
+19;19;Ferrous sulfate;200 mg;Diario;19/3/2025
+20;20;Lansoprazol;15 mg;Diario;20/3/2025
+21;21;Enalapril;10 mg;Diario;21/3/2025
+22;22;Furosemida;40 mg;Diario;22/3/2025
+23;23;Amlodipino;5 mg;Diario;23/3/2025
+24;24;Hidroclorotiazida;25 mg;Diario;24/3/2025
+25;25;Losartán;50 mg;Diario;25/3/2025
+26;26;Epoetina alfa;5000 UI;Semanal;26/3/2025
+27;27;Calcifediol;1 mcg;Semanal;27/3/2025
+28;28;Alopurinol;100 mg;Diario;28/3/2025
+29;29;Ferrous sulfate;200 mg;Diario;29/3/2025
+30;30;Lansoprazol;15 mg;Diario;30/3/2025
+31;31;Enalapril;10 mg;Diario;31/3/2025
+32;32;Furosemida;40 mg;Diario;1/3/2025
+33;33;Amlodipino;5 mg;Diario;2/3/2025
+34;34;Hidroclorotiazida;25 mg;Diario;3/3/2025
+35;35;Losartán;50 mg;Diario;4/3/2025
+36;36;Epoetina alfa;5000 UI;Semanal;5/3/2025
+37;37;Calcifediol;1 mcg;Semanal;6/3/2025
+38;38;Alopurinol;100 mg;Diario;7/3/2025
+39;39;Ferrous sulfate;200 mg;Diario;8/3/2025
+40;40;Lansoprazol;15 mg;Diario;9/3/2025
+41;41;Enalapril;10 mg;Diario;10/3/2025
+42;42;Furosemida;40 mg;Diario;11/3/2025
+43;43;Amlodipino;5 mg;Diario;12/3/2025
+44;44;Hidroclorotiazida;25 mg;Diario;13/3/2025
+45;45;Losartán;50 mg;Diario;14/3/2025
+46;46;Epoetina alfa;5000 UI;Semanal;15/3/2025
+47;47;Calcifediol;1 mcg;Semanal;16/3/2025
+48;48;Alopurinol;100 mg;Diario;17/3/2025
+49;49;Ferrous sulfate;200 mg;Diario;18/3/2025
+50;50;Lansoprazol;15 mg;Diario;19/3/2025
+51;51;Enalapril;10 mg;Diario;20/3/2025
+52;52;Furosemida;40 mg;Diario;21/3/2025
+53;53;Amlodipino;5 mg;Diario;22/3/2025
+54;54;Hidroclorotiazida;25 mg;Diario;23/3/2025
+55;55;Losartán;50 mg;Diario;24/3/2025
+56;56;Epoetina alfa;5000 UI;Semanal;25/3/2025
+57;57;Calcifediol;1 mcg;Semanal;26/3/2025
+58;58;Alopurinol;100 mg;Diario;27/3/2025
+59;59;Ferrous sulfate;200 mg;Diario;28/3/2025
+60;60;Lansoprazol;15 mg;Diario;29/3/2025

@@ -1,0 +1,11 @@
+﻿ID_Inasistencia;ID_Paciente;Fecha;Motivo
+1;1;45717;Turno médico
+2;4;45721;Enfermedad 
+3;10;45723;Problema personal
+4;14;45726;Problemas familiares
+5;20;45728;Problemas familiares
+6;25;45731;Problemas familiares
+7;31;45734;Enfermedad 
+8;42;45736;Turno médico
+9;51;45738;Turno médico
+10;57;45741;Problema personal

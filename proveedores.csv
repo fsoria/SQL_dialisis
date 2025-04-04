@@ -1,0 +1,11 @@
+﻿ID_Proveedor;ID_Insumo;nombre_proveedor;tipo_producto_servicio;contacto;direccion;telefono
+1;1;MediPro S.A.;Filtros;Juan Pérez;Av. Salud 123;011-1234-5678
+2;2;BioSalud SRL;Soluciones;María Gómez;Calle Hospital 456;011-2345-6789
+3;3;DialiTech;Máquinas de diálisis;Carlos Díaz;Ruta 9 km 20;011-3456-7890
+4;4;SaludPlus S.A.;Jeringas y agujas;Ana Torres;Diagonal Médica 789;011-4567-8901
+5;5;RenalMed Group;Tubuladuras;Javier Méndez;Parque Industrial Norte;011-5678-9012
+6;1;TecnoDial SRL;Anticoagulantes;Laura Suárez;Zona Franca 55;011-6789-0123
+7;2;VitalCare S.A.;Guantes estériles;Diego López;Av. Central 654;011-7890-1234
+8;3;Suministros Médicos Delta;Equipos portátiles;Claudia Rivas;Camino Sanitario 12;011-8901-2345
+9;4;NephroLogix;Bicarbonato;Sofía Herrera;B° Industrial Oeste;011-9012-3456
+10;5;Insumed;Catéteres;Ricardo Fernández;Polígono Salud 88;011-0123-4567

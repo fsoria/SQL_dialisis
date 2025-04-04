@@ -1,0 +1,61 @@
+﻿ID_Evolucion;ID_Paciente;ID_Medico;evolucion;fecha
+1;1;1;Sesión completada sin inconvenientes.;1/3/2025
+2;2;2;Sesión completada sin inconvenientes.;1/3/2025
+3;3;3;Dolor leve en el sitio de punción.;1/3/2025
+4;4;4;Presentó signos de fatiga post-sesión.;1/3/2025
+5;5;5;Presión arterial elevada al inicio de la sesión.;1/3/2025
+6;6;1;Estable, sin novedades clínicas.;1/3/2025
+7;7;2;Presentó complicaciones leves durante la sesión.;1/3/2025
+8;8;3;Presentó complicaciones leves durante la sesión.;1/3/2025
+9;9;4;Presentó complicaciones leves durante la sesión.;1/3/2025
+10;10;5;Dolor leve en el sitio de punción.;1/3/2025
+11;11;1;Estable, sin novedades clínicas.;1/3/2025
+12;12;2;Dolor leve en el sitio de punción.;1/3/2025
+13;13;3;Molestias gastrointestinales durante el procedimiento.;1/3/2025
+14;14;4;Requiere control más frecuente por niveles de potasio.;1/3/2025
+15;15;5;Paciente en buen estado general.;1/3/2025
+16;16;1;Dolor leve en el sitio de punción.;1/3/2025
+17;17;2;Presión arterial elevada al inicio de la sesión.;1/3/2025
+18;18;3;Paciente en buen estado general.;1/3/2025
+19;19;4;Presentó complicaciones leves durante la sesión.;1/3/2025
+20;20;5;Sesión completada sin inconvenientes.;1/3/2025
+21;21;1;Dolor leve en el sitio de punción.;1/3/2025
+22;22;2;Presentó complicaciones leves durante la sesión.;1/3/2025
+23;23;3;Sesión completada sin inconvenientes.;2/3/2025
+24;24;4;Molestias gastrointestinales durante el procedimiento.;2/3/2025
+25;25;5;Presentó signos de fatiga post-sesión.;2/3/2025
+26;26;1;Presión arterial elevada al inicio de la sesión.;2/3/2025
+27;27;2;Estable, sin novedades clínicas.;2/3/2025
+28;28;3;Molestias gastrointestinales durante el procedimiento.;2/3/2025
+29;29;4;Presentó complicaciones leves durante la sesión.;2/3/2025
+30;30;5;Buen funcionamiento del acceso vascular.;2/3/2025
+31;31;1;Paciente en buen estado general.;2/3/2025
+32;32;2;Sesión completada sin inconvenientes.;2/3/2025
+33;33;3;Sesión completada sin inconvenientes.;2/3/2025
+34;34;4;Presión arterial elevada al inicio de la sesión.;2/3/2025
+35;35;5;Buen funcionamiento del acceso vascular.;2/3/2025
+36;36;1;Molestias gastrointestinales durante el procedimiento.;2/3/2025
+37;37;2;Dolor leve en el sitio de punción.;2/3/2025
+38;38;3;Estable, sin novedades clínicas.;2/3/2025
+39;39;4;Estable, sin novedades clínicas.;2/3/2025
+40;40;5;Presentó signos de fatiga post-sesión.;2/3/2025
+41;41;1;Molestias gastrointestinales durante el procedimiento.;2/3/2025
+42;42;2;Sesión completada sin inconvenientes.;2/3/2025
+43;43;3;Sesión completada sin inconvenientes.;4/3/2025
+44;44;4;Estable, sin novedades clínicas.;4/3/2025
+45;45;5;Paciente en buen estado general.;4/3/2025
+46;46;1;Requiere control más frecuente por niveles de potasio.;4/3/2025
+47;47;2;Sesión completada sin inconvenientes.;4/3/2025
+48;48;3;Estable, sin novedades clínicas.;4/3/2025
+49;49;4;Estable, sin novedades clínicas.;4/3/2025
+50;50;5;Paciente en buen estado general.;4/3/2025
+51;51;1;Buen funcionamiento del acceso vascular.;4/3/2025
+52;52;2;Paciente en buen estado general.;4/3/2025
+53;53;3;Dolor leve en el sitio de punción.;4/3/2025
+54;54;4;Presentó signos de fatiga post-sesión.;4/3/2025
+55;55;5;Sesión completada sin inconvenientes.;4/3/2025
+56;56;1;Molestias gastrointestinales durante el procedimiento.;4/3/2025
+57;57;2;Presentó complicaciones leves durante la sesión.;4/3/2025
+58;58;3;Requiere control más frecuente por niveles de potasio.;4/3/2025
+59;59;4;Molestias gastrointestinales durante el procedimiento.;4/3/2025
+60;60;5;Estable, sin novedades clínicas.;4/3/2025

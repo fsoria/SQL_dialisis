@@ -1,0 +1,421 @@
+﻿ID_Paciente;Examen;Resultado;Fecha
+1;Hematocrito;29,6;2024-03-17
+1;Hemoglobina;10,8;2024-03-17
+1;Urea Pre;124,2;2024-03-17
+1;Urea Post;87,5;2024-03-17
+1;Calcio;7,7;2024-03-17
+1;Fosforo;6,6;2024-03-17
+1;Creatinina;6,1;2024-03-17
+2;Hematocrito;29,9;2024-03-06
+2;Hemoglobina;10,7;2024-03-06
+2;Urea Pre;105,8;2024-03-06
+2;Urea Post;70,9;2024-03-06
+2;Calcio;8,8;2024-03-06
+2;Fosforo;4,7;2024-03-06
+2;Creatinina;5,2;2024-03-06
+3;Hematocrito;28,4;2024-03-14
+3;Hemoglobina;8,4;2024-03-14
+3;Urea Pre;132,8;2024-03-14
+3;Urea Post;40,9;2024-03-14
+3;Calcio;7,8;2024-03-14
+3;Fosforo;6,7;2024-03-14
+3;Creatinina;6,7;2024-03-14
+4;Hematocrito;30,6;2024-03-23
+4;Hemoglobina;10,2;2024-03-23
+4;Urea Pre;111,1;2024-03-23
+4;Urea Post;75,7;2024-03-23
+4;Calcio;9,4;2024-03-23
+4;Fosforo;4,6;2024-03-23
+4;Creatinina;6,4;2024-03-23
+5;Hematocrito;28,2;2024-03-26
+5;Hemoglobina;9,2;2024-03-26
+5;Urea Pre;143,9;2024-03-26
+5;Urea Post;70,5;2024-03-26
+5;Calcio;9,2;2024-03-26
+5;Fosforo;5,5;2024-03-26
+5;Creatinina;12;2024-03-26
+6;Hematocrito;28,1;2024-03-25
+6;Hemoglobina;9,9;2024-03-25
+6;Urea Pre;89,3;2024-03-25
+6;Urea Post;69;2024-03-25
+6;Calcio;9,3;2024-03-25
+6;Fosforo;4,9;2024-03-25
+6;Creatinina;9,2;2024-03-25
+7;Hematocrito;32,1;2024-03-26
+7;Hemoglobina;8,1;2024-03-26
+7;Urea Pre;149,2;2024-03-26
+7;Urea Post;55,4;2024-03-26
+7;Calcio;9,3;2024-03-26
+7;Fosforo;5,3;2024-03-26
+7;Creatinina;9,9;2024-03-26
+8;Hematocrito;30,6;2024-03-12
+8;Hemoglobina;8,2;2024-03-12
+8;Urea Pre;135;2024-03-12
+8;Urea Post;62,1;2024-03-12
+8;Calcio;8,4;2024-03-12
+8;Fosforo;6,4;2024-03-12
+8;Creatinina;8,1;2024-03-12
+9;Hematocrito;30,6;2024-03-17
+9;Hemoglobina;10,6;2024-03-17
+9;Urea Pre;99,3;2024-03-17
+9;Urea Post;72,8;2024-03-17
+9;Calcio;8,9;2024-03-17
+9;Fosforo;4,9;2024-03-17
+9;Creatinina;5,9;2024-03-17
+10;Hematocrito;34,7;2024-03-01
+10;Hemoglobina;11;2024-03-01
+10;Urea Pre;143,2;2024-03-01
+10;Urea Post;42;2024-03-01
+10;Calcio;9,3;2024-03-01
+10;Fosforo;5,2;2024-03-01
+10;Creatinina;4,6;2024-03-01
+11;Hematocrito;33,8;2024-03-08
+11;Hemoglobina;10,7;2024-03-08
+11;Urea Pre;90,8;2024-03-08
+11;Urea Post;54;2024-03-08
+11;Calcio;8,9;2024-03-08
+11;Fosforo;5;2024-03-08
+11;Creatinina;10,3;2024-03-08
+12;Hematocrito;33,4;2024-03-07
+12;Hemoglobina;8,2;2024-03-07
+12;Urea Pre;92,9;2024-03-07
+12;Urea Post;79,1;2024-03-07
+12;Calcio;7,7;2024-03-07
+12;Fosforo;6,9;2024-03-07
+12;Creatinina;6,6;2024-03-07
+13;Hematocrito;32,3;2024-03-24
+13;Hemoglobina;11;2024-03-24
+13;Urea Pre;85,1;2024-03-24
+13;Urea Post;86,4;2024-03-24
+13;Calcio;9,4;2024-03-24
+13;Fosforo;5,4;2024-03-24
+13;Creatinina;7,8;2024-03-24
+14;Hematocrito;33,9;2024-03-03
+14;Hemoglobina;9,5;2024-03-03
+14;Urea Pre;85,2;2024-03-03
+14;Urea Post;80,7;2024-03-03
+14;Calcio;9;2024-03-03
+14;Fosforo;6,3;2024-03-03
+14;Creatinina;9,2;2024-03-03
+15;Hematocrito;28,7;2024-03-04
+15;Hemoglobina;8;2024-03-04
+15;Urea Pre;120,7;2024-03-04
+15;Urea Post;77,9;2024-03-04
+15;Calcio;9,5;2024-03-04
+15;Fosforo;6,2;2024-03-04
+15;Creatinina;6,5;2024-03-04
+16;Hematocrito;32,3;2024-03-23
+16;Hemoglobina;10,5;2024-03-23
+16;Urea Pre;95,5;2024-03-23
+16;Urea Post;87,4;2024-03-23
+16;Calcio;8,5;2024-03-23
+16;Fosforo;5,3;2024-03-23
+16;Creatinina;10,3;2024-03-23
+17;Hematocrito;33,6;2024-03-29
+17;Hemoglobina;8,6;2024-03-29
+17;Urea Pre;118,4;2024-03-29
+17;Urea Post;53;2024-03-29
+17;Calcio;8;2024-03-29
+17;Fosforo;6,6;2024-03-29
+17;Creatinina;9,3;2024-03-29
+18;Hematocrito;33,8;2024-03-11
+18;Hemoglobina;10,7;2024-03-11
+18;Urea Pre;101,7;2024-03-11
+18;Urea Post;80,3;2024-03-11
+18;Calcio;8,8;2024-03-11
+18;Fosforo;6,1;2024-03-11
+18;Creatinina;4,3;2024-03-11
+19;Hematocrito;29,9;2024-03-09
+19;Hemoglobina;9,2;2024-03-09
+19;Urea Pre;108;2024-03-09
+19;Urea Post;49,5;2024-03-09
+19;Calcio;7,9;2024-03-09
+19;Fosforo;5,5;2024-03-09
+19;Creatinina;5,1;2024-03-09
+20;Hematocrito;29,9;2024-03-08
+20;Hemoglobina;9,4;2024-03-08
+20;Urea Pre;101,6;2024-03-08
+20;Urea Post;49,7;2024-03-08
+20;Calcio;8,1;2024-03-08
+20;Fosforo;4,8;2024-03-08
+20;Creatinina;4,2;2024-03-08
+21;Hematocrito;28,9;2024-03-17
+21;Hemoglobina;10;2024-03-17
+21;Urea Pre;113,6;2024-03-17
+21;Urea Post;64,1;2024-03-17
+21;Calcio;7,7;2024-03-17
+21;Fosforo;4,5;2024-03-17
+21;Creatinina;7,6;2024-03-17
+22;Hematocrito;31,1;2024-03-12
+22;Hemoglobina;8,3;2024-03-12
+22;Urea Pre;109,5;2024-03-12
+22;Urea Post;50,6;2024-03-12
+22;Calcio;8,6;2024-03-12
+22;Fosforo;4,5;2024-03-12
+22;Creatinina;5,5;2024-03-12
+23;Hematocrito;30,6;2024-03-10
+23;Hemoglobina;8,4;2024-03-10
+23;Urea Pre;112;2024-03-10
+23;Urea Post;40,1;2024-03-10
+23;Calcio;7,6;2024-03-10
+23;Fosforo;5,4;2024-03-10
+23;Creatinina;7,7;2024-03-10
+24;Hematocrito;32,4;2024-03-30
+24;Hemoglobina;8,1;2024-03-30
+24;Urea Pre;120,4;2024-03-30
+24;Urea Post;64,6;2024-03-30
+24;Calcio;7,9;2024-03-30
+24;Fosforo;5;2024-03-30
+24;Creatinina;7,5;2024-03-30
+25;Hematocrito;29,5;2024-03-01
+25;Hemoglobina;10,6;2024-03-01
+25;Urea Pre;118,8;2024-03-01
+25;Urea Post;60,3;2024-03-01
+25;Calcio;9,2;2024-03-01
+25;Fosforo;6,4;2024-03-01
+25;Creatinina;9,3;2024-03-01
+26;Hematocrito;30,2;2024-03-19
+26;Hemoglobina;10,3;2024-03-19
+26;Urea Pre;129;2024-03-19
+26;Urea Post;66,9;2024-03-19
+26;Calcio;7,9;2024-03-19
+26;Fosforo;4,6;2024-03-19
+26;Creatinina;7,1;2024-03-19
+27;Hematocrito;30,3;2024-03-09
+27;Hemoglobina;10,4;2024-03-09
+27;Urea Pre;112,8;2024-03-09
+27;Urea Post;66,5;2024-03-09
+27;Calcio;8,7;2024-03-09
+27;Fosforo;5,8;2024-03-09
+27;Creatinina;5,9;2024-03-09
+28;Hematocrito;34;2024-03-19
+28;Hemoglobina;8,4;2024-03-19
+28;Urea Pre;138,2;2024-03-19
+28;Urea Post;74,1;2024-03-19
+28;Calcio;7,8;2024-03-19
+28;Fosforo;5,1;2024-03-19
+28;Creatinina;8,3;2024-03-19
+29;Hematocrito;29,3;2024-03-06
+29;Hemoglobina;8,6;2024-03-06
+29;Urea Pre;128,4;2024-03-06
+29;Urea Post;84,1;2024-03-06
+29;Calcio;8,8;2024-03-06
+29;Fosforo;5,3;2024-03-06
+29;Creatinina;8,9;2024-03-06
+30;Hematocrito;30,1;2024-03-13
+30;Hemoglobina;8,6;2024-03-13
+30;Urea Pre;147,7;2024-03-13
+30;Urea Post;61,8;2024-03-13
+30;Calcio;8,2;2024-03-13
+30;Fosforo;6,2;2024-03-13
+30;Creatinina;9,6;2024-03-13
+31;Hematocrito;34;2024-03-29
+31;Hemoglobina;9,1;2024-03-29
+31;Urea Pre;125,9;2024-03-29
+31;Urea Post;78,7;2024-03-29
+31;Calcio;9,2;2024-03-29
+31;Fosforo;5,4;2024-03-29
+31;Creatinina;9,4;2024-03-29
+32;Hematocrito;33,7;2024-03-06
+32;Hemoglobina;8,7;2024-03-06
+32;Urea Pre;101,2;2024-03-06
+32;Urea Post;56,9;2024-03-06
+32;Calcio;8,8;2024-03-06
+32;Fosforo;5,2;2024-03-06
+32;Creatinina;11,4;2024-03-06
+33;Hematocrito;34,1;2024-03-16
+33;Hemoglobina;9,4;2024-03-16
+33;Urea Pre;124,6;2024-03-16
+33;Urea Post;81,8;2024-03-16
+33;Calcio;9,5;2024-03-16
+33;Fosforo;5;2024-03-16
+33;Creatinina;5,1;2024-03-16
+34;Hematocrito;33,3;2024-03-19
+34;Hemoglobina;9,5;2024-03-19
+34;Urea Pre;144,2;2024-03-19
+34;Urea Post;40,4;2024-03-19
+34;Calcio;7,6;2024-03-19
+34;Fosforo;6,8;2024-03-19
+34;Creatinina;6,3;2024-03-19
+35;Hematocrito;29,4;2024-03-08
+35;Hemoglobina;10,2;2024-03-08
+35;Urea Pre;112,4;2024-03-08
+35;Urea Post;76,1;2024-03-08
+35;Calcio;8;2024-03-08
+35;Fosforo;5,8;2024-03-08
+35;Creatinina;11,1;2024-03-08
+36;Hematocrito;34,3;2024-03-05
+36;Hemoglobina;9,2;2024-03-05
+36;Urea Pre;91,4;2024-03-05
+36;Urea Post;59,7;2024-03-05
+36;Calcio;8,1;2024-03-05
+36;Fosforo;6,9;2024-03-05
+36;Creatinina;5,3;2024-03-05
+37;Hematocrito;28,3;2024-03-27
+37;Hemoglobina;9,5;2024-03-27
+37;Urea Pre;132,3;2024-03-27
+37;Urea Post;76;2024-03-27
+37;Calcio;9,4;2024-03-27
+37;Fosforo;6,7;2024-03-27
+37;Creatinina;10,2;2024-03-27
+38;Hematocrito;29;2024-03-24
+38;Hemoglobina;9,4;2024-03-24
+38;Urea Pre;136,5;2024-03-24
+38;Urea Post;66,2;2024-03-24
+38;Calcio;8,2;2024-03-24
+38;Fosforo;6,6;2024-03-24
+38;Creatinina;11,1;2024-03-24
+39;Hematocrito;32,1;2024-03-24
+39;Hemoglobina;9,8;2024-03-24
+39;Urea Pre;82;2024-03-24
+39;Urea Post;57,2;2024-03-24
+39;Calcio;7,6;2024-03-24
+39;Fosforo;5,4;2024-03-24
+39;Creatinina;8,1;2024-03-24
+40;Hematocrito;32,6;2024-03-01
+40;Hemoglobina;10;2024-03-01
+40;Urea Pre;114,5;2024-03-01
+40;Urea Post;61,1;2024-03-01
+40;Calcio;8,5;2024-03-01
+40;Fosforo;5,2;2024-03-01
+40;Creatinina;9,8;2024-03-01
+41;Hematocrito;32,4;2024-03-10
+41;Hemoglobina;8,4;2024-03-10
+41;Urea Pre;143,4;2024-03-10
+41;Urea Post;48,8;2024-03-10
+41;Calcio;9,4;2024-03-10
+41;Fosforo;6,3;2024-03-10
+41;Creatinina;9;2024-03-10
+42;Hematocrito;31,8;2024-03-07
+42;Hemoglobina;10,6;2024-03-07
+42;Urea Pre;89;2024-03-07
+42;Urea Post;59;2024-03-07
+42;Calcio;7,8;2024-03-07
+42;Fosforo;5,6;2024-03-07
+42;Creatinina;8,2;2024-03-07
+43;Hematocrito;31,5;2024-03-12
+43;Hemoglobina;8,2;2024-03-12
+43;Urea Pre;87,2;2024-03-12
+43;Urea Post;48,7;2024-03-12
+43;Calcio;7,6;2024-03-12
+43;Fosforo;5,2;2024-03-12
+43;Creatinina;9,5;2024-03-12
+44;Hematocrito;34,1;2024-03-16
+44;Hemoglobina;9,3;2024-03-16
+44;Urea Pre;125;2024-03-16
+44;Urea Post;64,1;2024-03-16
+44;Calcio;7,8;2024-03-16
+44;Fosforo;6,5;2024-03-16
+44;Creatinina;10,3;2024-03-16
+45;Hematocrito;31,6;2024-03-04
+45;Hemoglobina;8,2;2024-03-04
+45;Urea Pre;87,8;2024-03-04
+45;Urea Post;74,5;2024-03-04
+45;Calcio;7,9;2024-03-04
+45;Fosforo;5,6;2024-03-04
+45;Creatinina;5,2;2024-03-04
+46;Hematocrito;28,7;2024-03-26
+46;Hemoglobina;9,5;2024-03-26
+46;Urea Pre;117,7;2024-03-26
+46;Urea Post;84,1;2024-03-26
+46;Calcio;9,3;2024-03-26
+46;Fosforo;4,6;2024-03-26
+46;Creatinina;9,5;2024-03-26
+47;Hematocrito;33;2024-03-24
+47;Hemoglobina;9;2024-03-24
+47;Urea Pre;123,6;2024-03-24
+47;Urea Post;54,2;2024-03-24
+47;Calcio;7,9;2024-03-24
+47;Fosforo;6,3;2024-03-24
+47;Creatinina;10,5;2024-03-24
+48;Hematocrito;32,7;2024-03-12
+48;Hemoglobina;9,1;2024-03-12
+48;Urea Pre;81,7;2024-03-12
+48;Urea Post;42,7;2024-03-12
+48;Calcio;8,3;2024-03-12
+48;Fosforo;5,6;2024-03-12
+48;Creatinina;5,4;2024-03-12
+49;Hematocrito;34,5;2024-03-05
+49;Hemoglobina;9,8;2024-03-05
+49;Urea Pre;124,2;2024-03-05
+49;Urea Post;73,3;2024-03-05
+49;Calcio;7,5;2024-03-05
+49;Fosforo;7;2024-03-05
+49;Creatinina;10,3;2024-03-05
+50;Hematocrito;35;2024-03-22
+50;Hemoglobina;10,5;2024-03-22
+50;Urea Pre;120,9;2024-03-22
+50;Urea Post;64,8;2024-03-22
+50;Calcio;8,9;2024-03-22
+50;Fosforo;6,8;2024-03-22
+50;Creatinina;9,5;2024-03-22
+51;Hematocrito;28,8;2024-03-12
+51;Hemoglobina;9,6;2024-03-12
+51;Urea Pre;131;2024-03-12
+51;Urea Post;70,9;2024-03-12
+51;Calcio;9,2;2024-03-12
+51;Fosforo;5,8;2024-03-12
+51;Creatinina;6,8;2024-03-12
+52;Hematocrito;30,8;2024-03-02
+52;Hemoglobina;9,6;2024-03-02
+52;Urea Pre;133,9;2024-03-02
+52;Urea Post;67,1;2024-03-02
+52;Calcio;9,4;2024-03-02
+52;Fosforo;5,2;2024-03-02
+52;Creatinina;11,7;2024-03-02
+53;Hematocrito;32,3;2024-03-11
+53;Hemoglobina;8,2;2024-03-11
+53;Urea Pre;98,8;2024-03-11
+53;Urea Post;44,8;2024-03-11
+53;Calcio;8,9;2024-03-11
+53;Fosforo;5,8;2024-03-11
+53;Creatinina;7,7;2024-03-11
+54;Hematocrito;32,6;2024-03-08
+54;Hemoglobina;8,2;2024-03-08
+54;Urea Pre;130,2;2024-03-08
+54;Urea Post;44,3;2024-03-08
+54;Calcio;8,4;2024-03-08
+54;Fosforo;6;2024-03-08
+54;Creatinina;5,1;2024-03-08
+55;Hematocrito;30,1;2024-03-16
+55;Hemoglobina;8;2024-03-16
+55;Urea Pre;128,5;2024-03-16
+55;Urea Post;79,1;2024-03-16
+55;Calcio;9;2024-03-16
+55;Fosforo;5,8;2024-03-16
+55;Creatinina;6,4;2024-03-16
+56;Hematocrito;31,9;2024-03-10
+56;Hemoglobina;10,5;2024-03-10
+56;Urea Pre;122;2024-03-10
+56;Urea Post;85,2;2024-03-10
+56;Calcio;8,4;2024-03-10
+56;Fosforo;6,3;2024-03-10
+56;Creatinina;9,5;2024-03-10
+57;Hematocrito;28,2;2024-03-16
+57;Hemoglobina;10,9;2024-03-16
+57;Urea Pre;127,9;2024-03-16
+57;Urea Post;84,3;2024-03-16
+57;Calcio;8,9;2024-03-16
+57;Fosforo;6;2024-03-16
+57;Creatinina;7,8;2024-03-16
+58;Hematocrito;29,3;2024-03-19
+58;Hemoglobina;9,6;2024-03-19
+58;Urea Pre;90,7;2024-03-19
+58;Urea Post;83,4;2024-03-19
+58;Calcio;9,2;2024-03-19
+58;Fosforo;5,4;2024-03-19
+58;Creatinina;6;2024-03-19
+59;Hematocrito;32,1;2024-03-05
+59;Hemoglobina;10,9;2024-03-05
+59;Urea Pre;131,5;2024-03-05
+59;Urea Post;71,3;2024-03-05
+59;Calcio;8,5;2024-03-05
+59;Fosforo;5,6;2024-03-05
+59;Creatinina;10,3;2024-03-05
+60;Hematocrito;32,4;2024-03-13
+60;Hemoglobina;8,7;2024-03-13
+60;Urea Pre;146,6;2024-03-13
+60;Urea Post;57,4;2024-03-13
+60;Calcio;8,5;2024-03-13
+60;Fosforo;6,2;2024-03-13
+60;Creatinina;11,3;2024-03-13
